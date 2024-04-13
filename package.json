@@ -10,7 +10,7 @@
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
-    "sass" : "sass --watch src/styles.scss src/styles.css"
+    "sass" : "sass --watch src/css/styles.scss src/css/styles.css"
   },
   "keywords": [],
   "author": "",
