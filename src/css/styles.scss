@@ -1,8 +1,17 @@
-$primary-color: #006c05;
-$secondary-color: #00ff0d;
+$primary-color: #0A2647;
+$secondary-color: #2C74B3;
+
+@use "_index.scss";
 
 * {
   box-sizing: border-box;  
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -53,4 +62,12 @@ body {
       }
     }
   }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
