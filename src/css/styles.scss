@@ -24,12 +24,16 @@ body {
   background: radial-gradient(circle, $primary-color, black);
 }
 
-.navbar {
-  background-color: transparent;
+@mixin flex($flexDirection: row, $justifyContent: center, $alignItems: center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+.navbar {
+  @include flex($justifyContent: space-between);
+  background-color: transparent;
   padding: 0 1rem;
   img {
     display: block;
@@ -37,9 +41,7 @@ body {
     margin: 0 1.5rem;
   }
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     list-style: none;
     padding-left: 0;
     li {
@@ -65,9 +67,6 @@ body {
 }
 
 .container {
+  @include flex($flexDirection: column);
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
