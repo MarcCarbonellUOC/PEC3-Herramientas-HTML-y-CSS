@@ -1,7 +1,12 @@
 $primary-color: #0A2647;
 $secondary-color: #2C74B3;
 
-@use "_index.scss";
+@mixin flex($flexDirection: column, $justifyContent: center, $alignItems: center) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
 
 * {
   box-sizing: border-box;  
@@ -15,6 +20,7 @@ html {
 }
 
 body {
+  color: white;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -22,18 +28,13 @@ body {
   font-size: 16px;
   font-family: 'Space Grotesk', Arial, sans-serif;
   background: radial-gradient(circle, $primary-color, black);
-}
-
-@mixin flex($flexDirection: row, $justifyContent: center, $alignItems: center) {
-  display: flex;
-  flex-direction: $flexDirection;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
+  background-attachment: fixed;
 }
 
 .navbar {
-  @include flex($justifyContent: space-between);
+  @include flex($flexDirection: row, $justifyContent: space-between);
   background-color: transparent;
+  height: 5.7rem;
   padding: 0 1rem;
   img {
     display: block;
@@ -41,7 +42,7 @@ body {
     margin: 0 1.5rem;
   }
   ul {
-    @include flex;
+    @include flex($flexDirection: row);
     list-style: none;
     padding-left: 0;
     li {
@@ -66,7 +67,129 @@ body {
   }
 }
 
-.container {
-  @include flex($flexDirection: column);
-  height: 100%;
+main {
+  @include flex($justifyContent: flex-start);
+  min-height: calc(100% - 5.7rem);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+iframe, figure {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+// COVER
+
+.cover_container {
+  @include flex;
+  min-height: 100%;
+}
+
+.promo_text {
+  font-size: 24px;
+}
+
+.logo {
+  width: 800px;
+}
+
+// HOME
+
+.home_container {
+  @include flex($alignItems: flex-start);
+  width: 75%;
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    h1 {
+      grid-column: 1/3;
+    }
+    p:first-of-type {
+      grid-column: 1/3;
+    }
+    figure {
+      grid-row: 3/5;
+    }
+  }
+}
+
+
+
+// MEMBERS
+
+.members_container {
+  @include flex;
+  text-align: center;
+  width: 80%;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  position: relative;
+  transition: transform 0.3s;
+  img {
+    border-radius: 2rem;
+    width: 15rem;
+    height: 21rem;
+  }
+  h2 {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+  }
+  .onHover {
+    visibility: hidden;
+    p {
+      position: relative;
+      bottom: 4.5rem;
+      z-index: 2;
+      margin: 0;
+    }
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  h2 {
+    bottom: 6rem;
+  }
+  .onHover {
+    visibility: visible;
+  }
+}
+
+.black_blur {
+  position: absolute;
+  bottom: 3.8rem;
+  width: 100%;
+  border-radius: 2rem;
+  height: calc(100% - 5rem);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  z-index: 1;
 }
