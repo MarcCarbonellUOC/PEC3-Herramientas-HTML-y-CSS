@@ -1,11 +1,11 @@
-import reynoldsInstrument from './img/reynolds-instrument.jpg';
-import wayneInstrument from './img/wayne-instrument.jpg';
-import mckeeInstrument from './img/mckee-instrument.jpg';
-import platzmanInstrument from './img/platzman-instrument.jpg';
-import reynoldsPortrait from './img/reynolds-portrait.jpg';
-import waynePortrait from './img/wayne-portrait.jpg';
-import mckeePortrait from './img/mckee-portrait.jpg';
-import platzmanPortrait from './img/platzman-portrait.jpg';
+import reynoldsInstrument from '../img/reynolds-instrument.jpg';
+import wayneInstrument from '../img/wayne-instrument.jpg';
+import mckeeInstrument from '../img/mckee-instrument.jpg';
+import platzmanInstrument from '../img/platzman-instrument.jpg';
+import reynoldsPortrait from '../img/reynolds-portrait.jpg';
+import waynePortrait from '../img/wayne-portrait.jpg';
+import mckeePortrait from '../img/mckee-portrait.jpg';
+import platzmanPortrait from '../img/platzman-portrait.jpg';
 
 const cards = document.querySelectorAll('.card');
 

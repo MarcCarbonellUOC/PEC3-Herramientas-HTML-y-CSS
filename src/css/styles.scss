@@ -159,7 +159,7 @@ figcaption {
 .members_container {
   @include flex;
   text-align: center;
-  width: 80%;
+  width: 75%;
 }
 
 .card_container {
@@ -170,7 +170,6 @@ figcaption {
 }
 
 .card_link {
-  display: block;
   text-decoration: none;
   color: white
 }
@@ -178,9 +177,10 @@ figcaption {
 .card {
   position: relative;
   transition: transform 0.3s;
+  width: 15rem;
   img {
     border-radius: 2rem;
-    width: 15rem;
+    width: 100%;
     height: 21rem;
   }
   h2 {
@@ -192,6 +192,7 @@ figcaption {
   }
   .onHover {
     visibility: hidden;
+    max-width: 100%;
     p {
       position: relative;
       bottom: 4.5rem;
@@ -214,7 +215,7 @@ figcaption {
 
 .black_blur {
   position: absolute;
-  bottom: 3.8rem;
+  bottom: 3.82rem;
   width: 100%;
   border-radius: 2rem;
   height: calc(100% - 5rem);
@@ -227,7 +228,7 @@ figcaption {
 .discography_container {
   @include flex;
   text-align: center;
-  width: 80%;
+  width: 75%;
   .card_container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -265,4 +266,32 @@ figcaption {
       margin-bottom: 1rem;
     }
   }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.discography-carousel {
+  position: relative;
+  width: 100%;
+  img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
 }
