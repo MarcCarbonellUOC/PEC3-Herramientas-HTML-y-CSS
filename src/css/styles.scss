@@ -295,3 +295,25 @@ figcaption {
   align-items: center;
   margin-top: 2.5rem;
 }
+
+// REFRENCES
+
+.references_container {
+  @include flex($alignItems: flex-start);
+  width: 75%;
+
+  article {
+    h1 {
+      margin-bottom: 2rem;
+    }
+    ul {
+      margin-bottom: 2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -293,4 +293,24 @@ figcaption {
   margin-top: 2.5rem;
 }
 
+.references_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+}
+.references_container article h1 {
+  margin-bottom: 2rem;
+}
+.references_container article ul {
+  margin-bottom: 2rem;
+}
+.references_container article li {
+  margin-bottom: 1rem;
+}
+.references_container article p {
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
