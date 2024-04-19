@@ -339,5 +339,11 @@ figcaption {
 .references_container article p {
   margin-bottom: 1rem;
 }
+.references_container article a {
+  color: white;
+}
+.references_container article a:hover {
+  color: #2C74B3;
+}
 
 /*# sourceMappingURL=styles.css.map */

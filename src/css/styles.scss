@@ -347,5 +347,11 @@ figcaption {
     p {
       margin-bottom: 1rem;
     }
+    a {
+      color: white;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
   }
 }
