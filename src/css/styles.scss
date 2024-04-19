@@ -10,6 +10,12 @@ $mercury-red: #9c2227;
   flex-wrap: $wrap;
 }
 
+@mixin grid($templateColumns: 1, $columnGap: 0) {
+  display: grid;
+  grid-template-columns: repeat($templateColumns, 1fr);
+  column-gap: $columnGap;
+}
+
 @mixin mobile {
   @media screen and (max-width: 767px) {
     @content;
@@ -172,8 +178,7 @@ figcaption {
     }
     @include desktop() { 
       .iframe_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include grid($templateColumns: 2);
         gap: 2rem;
         iframe:first-of-type {
           grid-column: 1/2;
@@ -195,13 +200,18 @@ figcaption {
 }
 
 .card_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 4rem;
+  @include flex;
   margin-top: 4rem;
+  @include tablet() {
+    @include grid($templateColumns: 2, $columnGap: 4rem);
+  }
+  @include desktop() {
+    @include grid($templateColumns: 4, $columnGap: 4rem);
+  }
 }
 
 .card_link {
+  display: inline-block;
   text-decoration: none;
   color: white
 }
@@ -262,7 +272,12 @@ figcaption {
   text-align: center;
   width: 75%;
   .card_container {
-    grid-template-columns: repeat(3, 1fr);
+    @include tablet() {
+      @include grid($templateColumns: 2, $columnGap: 4rem);
+    }
+    @include desktop() {
+      @include grid($templateColumns: 3, $columnGap: 4rem);
+    }
   }
   img {
     width: 15rem;
