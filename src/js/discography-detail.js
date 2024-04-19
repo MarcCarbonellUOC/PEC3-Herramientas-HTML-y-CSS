@@ -27,30 +27,36 @@ const night = '#58555f';
 
 const cards = document.querySelectorAll('.card');
 
-cards.forEach(card => {
-  card.addEventListener('mouseover', function() {
-    const cardImage = this.querySelector('.card_image');
-    switch(cardImage.id) {
-      case 'mercury1':
-        document.body.style.background = `radial-gradient(circle,  ${mercury1} , black)`;
-        break;
-      case 'origins':
-        document.body.style.background = `radial-gradient(circle,  ${origins} , black)`;
-        break;
-      case 'evolve':
-        document.body.style.background = `radial-gradient(circle,  ${evolve} , black)`;
-        break;
-      case 'smoke':
-        document.body.style.background = `radial-gradient(circle,  ${smoke} , black)`;
-        break;
-      case 'night':
-        document.body.style.background = `radial-gradient(circle,  ${night} , black)`;
-        break;
-    }
-    document.body.style.backgroundAttachment = 'fixed';
-  });
-  card.addEventListener('mouseout', function() {
-    document.body.style.background = `radial-gradient(circle, ${mercury2}, black)`;
-    document.body.style.backgroundAttachment = 'fixed';
-  });
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth >= 1280) {
+
+    cards.forEach(card => {
+      card.addEventListener('mouseover', function() {
+        const cardImage = this.querySelector('.card_image');
+        switch(cardImage.id) {
+          case 'mercury1':
+            document.body.style.background = `radial-gradient(circle,  ${mercury1} , black)`;
+            break;
+          case 'origins':
+            document.body.style.background = `radial-gradient(circle,  ${origins} , black)`;
+            break;
+          case 'evolve':
+            document.body.style.background = `radial-gradient(circle,  ${evolve} , black)`;
+            break;
+          case 'smoke':
+            document.body.style.background = `radial-gradient(circle,  ${smoke} , black)`;
+            break;
+          case 'night':
+            document.body.style.background = `radial-gradient(circle,  ${night} , black)`;
+            break;
+        }
+        document.body.style.backgroundAttachment = 'fixed';
+      });
+      card.addEventListener('mouseout', function() {
+        document.body.style.background = `radial-gradient(circle, ${mercury2}, black)`;
+        document.body.style.backgroundAttachment = 'fixed';
+      });
+    });
+    
+  }
 });

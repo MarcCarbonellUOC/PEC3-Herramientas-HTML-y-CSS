@@ -16,12 +16,6 @@ $mercury-red: #9c2227;
   column-gap: $columnGap;
 }
 
-@mixin mobile {
-  @media screen and (max-width: 767px) {
-    @content;
-  }
-}
-
 @mixin tablet {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     @content;
@@ -245,13 +239,15 @@ figcaption {
 }
 
 .card:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  h2 {
-    bottom: 6rem;
-  }
-  .onHover {
-    visibility: visible;
+  @include desktop() { 
+    cursor: pointer;
+    transform: scale(1.2);
+    h2 {
+      bottom: 6rem;
+    }
+    .onHover {
+      visibility: visible;
+    }
   }
 }
 
@@ -299,11 +295,22 @@ figcaption {
   article {
     h1 {
       margin-bottom: 2rem;
+      justify-self: center;
     }
     figure {
-      float: right;
-      margin-left: 2rem;
+      margin-left: 0;
       margin-bottom: 2rem;
+      img {
+        width: 100%;
+      }
+      @include tablet() {
+        float: right;
+        margin-left: 2rem;
+      }
+      @include desktop() {
+        float: right;
+        margin-left: 2rem;
+      }
     }
     ul {
       margin-bottom: 2rem;

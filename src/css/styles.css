@@ -243,15 +243,17 @@ figcaption {
   margin: 0;
 }
 
-.card:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.card:hover h2 {
-  bottom: 6rem;
-}
-.card:hover .onHover {
-  visibility: visible;
+@media screen and (min-width: 1280px) {
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .card:hover h2 {
+    bottom: 6rem;
+  }
+  .card:hover .onHover {
+    visibility: visible;
+  }
 }
 
 .black_blur {
@@ -307,11 +309,26 @@ figcaption {
 }
 .detail_container article h1 {
   margin-bottom: 2rem;
+  justify-self: center;
 }
 .detail_container article figure {
-  float: right;
-  margin-left: 2rem;
+  margin-left: 0;
   margin-bottom: 2rem;
+}
+.detail_container article figure img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .detail_container article figure {
+    float: right;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detail_container article figure {
+    float: right;
+    margin-left: 2rem;
+  }
 }
 .detail_container article ul {
   margin-bottom: 2rem;
