@@ -7,16 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <script type="module" src="js/side-menu.js"></script>
     <script type="module" src="js/discography-detail.js"></script>
     <title>Detalles del disco</title>
   </head>
   <body class="mercury_body">
     <header class="navbar">
-      <div>
+      <div class="hamburguer_btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="logo_container">
         <a href="index.html" title="Página de incio"><img alt="Logo de Imagine Dragons" src="img/imagine-dragons-logo.png" /></a>
       </div>
-      <nav>
-        <ul class="nav_menu">
+      <nav class="nav_menu">
+        <ul class="nav_list">
           <li>
             <a href="home.html" title="Página de inicio">Inicio</a>
           </li>
@@ -24,7 +31,7 @@
             <a href="members.html" title="Miembros de la banda">Conoce&nbsp;a&nbsp;la&nbsp;banda</a>
           </li>
           <li>
-            <a href="discography.html" title="Discografía">Discografía</a>
+            <a href="discography.html" title="Discografía" class="current">Discografía</a>
           </li>
           <li>
             <a href="references.html" title="Documentación y enlaces del contenido">Referencias</a>
@@ -32,6 +39,38 @@
         </ul>
       </nav>
     </header>
+    <nav class="side_menu">
+      <div class="close_btn">
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="home.html" title="Página de inicio">
+            <span class="fa-solid fa-house"></span>
+            <p>Inicio</p>
+          </a>
+        </li>
+        <li>
+          <a href="members.html" title="Miembros de la banda">
+            <span class="fa-solid fa-users"></span>
+            <p>Conoce a la banda</p>
+          </a>
+        </li>
+        <li>
+          <a href="discography.html" title="Discografía" class="current">
+            <span class="fa-solid fa-compact-disc"></span>
+            <p>Discografía</p>
+          </a>
+        </li>
+        <li>
+          <a href="references.html" title="Documentación y enlaces del contenido">
+            <span class="fa-solid fa-asterisk"></span>
+            <p>Referencias</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <div class="detail_container">
         <article>
