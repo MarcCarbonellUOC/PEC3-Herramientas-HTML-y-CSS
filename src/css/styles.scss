@@ -245,7 +245,13 @@ figcaption {
 
 .home_container {
   @include flex($alignItems: flex-start);
-  width: 75%;
+  width: 90%;
+  @include tablet() {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 70%;
+  }
 
   article {
     p:first-of-type {
@@ -275,7 +281,13 @@ figcaption {
 .members_container {
   @include flex;
   text-align: center;
-  width: 75%;
+  width: 90%;
+  @include tablet() {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 70%;
+  }
 }
 
 .card_container {
@@ -351,7 +363,13 @@ figcaption {
 .discography_container {
   @include flex;
   text-align: center;
-  width: 75%;
+  width: 90%;
+  @include tablet() {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 70%;
+  }
   .card_container {
     @include tablet() {
       @include grid($templateColumns: 2, $columnGap: 4rem);
@@ -375,7 +393,13 @@ figcaption {
 
 .detail_container {
   @include flex($alignItems: flex-start);
-  width: 75%;
+  width: 90%;
+  @include tablet() {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 70%;
+  }
 
   article {
     h1 {
@@ -439,7 +463,13 @@ figcaption {
 
 .references_container {
   @include flex($alignItems: flex-start);
-  width: 75%;
+  width: 90%;
+  @include tablet() {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 70%;
+  }
 
   article {
     h1 {
