@@ -253,7 +253,17 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
-  width: 75%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .home_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .home_container {
+    width: 70%;
+  }
 }
 .home_container article p:first-of-type {
   font-size: 1.2rem;
@@ -284,7 +294,17 @@ figcaption {
   align-items: center;
   flex-wrap: nowrap;
   text-align: center;
-  width: 75%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .members_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .members_container {
+    width: 70%;
+  }
 }
 
 .card_container {
@@ -374,7 +394,17 @@ figcaption {
   align-items: center;
   flex-wrap: nowrap;
   text-align: center;
-  width: 75%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .discography_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .discography_container {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .discography_container .card_container {
@@ -406,7 +436,17 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
-  width: 75%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .detail_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detail_container {
+    width: 70%;
+  }
 }
 .detail_container article h1 {
   margin-bottom: 2rem;
@@ -472,7 +512,17 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
-  width: 75%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .references_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .references_container {
+    width: 70%;
+  }
 }
 .references_container article h1 {
   margin-bottom: 2rem;
