@@ -49,6 +49,7 @@ iframe {
   margin: 0;
   margin-bottom: 2rem;
   width: 100%;
+  border: none;
 }
 
 figure {
