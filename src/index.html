@@ -14,10 +14,39 @@
       <div class="cover_container">
         <div class="logo">
           <a href="index.html" title="Página de incio">
-            <img alt="Logo de Imagine Dragons (Imagine)" src="img/imagine-logo.png" />
-          </a>
-          <a href="index.html" title="Página de incio">
-          <img alt="Logo de Imagine Dragons (Dragons)" src="img/dragons-logo.png" />
+            <picture>
+              <source media="(max-width: 1279px)"
+                      srcset="img/imagine-dragons-logo-short.png?as=avif&width=430 1x,
+                             img/imagine-dragons-logo-short.png?as=avif&width=645 1.5x,
+                             img/imagine-dragons-logo-short.png?as=avif 2x"
+                      type="image/avif"/>
+              <source media="(max-width: 1279px)"
+                      srcset="img/imagine-dragons-logo-short.png?as=webp&width=430 1x,
+                             img/imagine-dragons-logo-short.png?as=webp&width=645 1.5x,
+                             img/imagine-dragons-logo-short.png?as=webp 2x"
+                      type="image/webp"/>
+              <source media="(max-width: 1279px)"
+                      srcset="img/imagine-dragons-logo-short.png?width=430 1x,
+                             img/imagine-dragons-logo-short.png?width=860 1.5x,
+                             img/imagine-dragons-logo-short.png 2x"/>
+
+              <source media="(min-width: 1280px)"
+                      srcset="img/imagine-dragons-logo.png?as=avif&width=800 1x,
+                             img/imagine-dragons-logo.png?as=avif&width=1200 1.5x,
+                             img/imagine-dragons-logo.png?as=avif 2x"
+                      type="image/avif"/>
+              <source media="(min-width: 1280px)"
+                      srcset="img/imagine-dragons-logo.png?as=webp&width=800 1x,
+                             img/imagine-dragons-logo.png?as=webp&width=1200 1.5x,
+                             img/imagine-dragons-logo.png?as=webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 1280px)"
+                      srcset="img/imagine-dragons-logo.png?width=800 1x,
+                             img/imagine-dragons-logo.png?width=1200 1.5x,
+                             img/imagine-dragons-logo.png 2x"/>
+             
+              <img src="img/imagine-dragons-logo-short.png" alt="Logo de Imagine Dragons" />
+            </picture>
           </a>
         </div>
         <h1 class="promo_text">¡Descubre todos los secretos detrás de Imagine Dragons!</h1>

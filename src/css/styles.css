@@ -57,6 +57,10 @@ figure {
   margin-bottom: 2rem;
 }
 
+figure img {
+  width: 100%;
+}
+
 figcaption {
   font-size: 0.75rem;
 }
@@ -237,13 +241,16 @@ figcaption {
 }
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 375px;
 }
+
+@media screen and (min-width: 1279px) {
+  .logo {
+    width: 800px;
+  }
+}
+
+
 .logo img {
   width: 100%;
 }
@@ -453,25 +460,39 @@ figcaption {
   margin-bottom: 2rem;
   justify-self: center;
 }
-.detail_container article figure {
+
+.detail_image_container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail_image_container figure {
   margin-left: 0;
   margin-bottom: 2rem;
+  width: 75%;
 }
-.detail_container article figure img {
+
+.detail_image_container figure img {
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .detail_container article figure {
+
+@media screen and (min-width: 768px)  {
+  .detail_image_container figure {
     float: right;
     margin-left: 2rem;
+    max-width: 40%;
+  }
+  .detail_image_container {
+    display: inline;
   }
 }
-@media screen and (min-width: 1280px) {
-  .detail_container article figure {
-    float: right;
-    margin-left: 2rem;
+
+@media screen and (min-width: 1280px)  {
+  .detail_image_container figure {
+    max-width: 33%;
   }
 }
+
 .detail_container article ul {
   margin-bottom: 2rem;
   column-count: 2;
