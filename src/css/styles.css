@@ -57,10 +57,6 @@ figure {
   margin-bottom: 2rem;
 }
 
-figure img {
-  width: 100%;
-}
-
 figcaption {
   font-size: 0.75rem;
 }
@@ -224,7 +220,7 @@ figcaption {
 .cover_container ul {
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .cover_container {
     width: 80%;
   }
@@ -241,16 +237,13 @@ figcaption {
 }
 
 .logo {
-  width: 375px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-@media screen and (min-width: 1279px) {
-  .logo {
-    width: 800px;
-  }
-}
-
-
 .logo img {
   width: 100%;
 }
@@ -263,7 +256,7 @@ figcaption {
   flex-wrap: nowrap;
   width: 90%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .home_container {
     width: 80%;
   }
@@ -304,7 +297,7 @@ figcaption {
   text-align: center;
   width: 90%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .members_container {
     width: 80%;
   }
@@ -323,7 +316,7 @@ figcaption {
   flex-wrap: nowrap;
   margin-top: 4rem;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -404,7 +397,7 @@ figcaption {
   text-align: center;
   width: 90%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .discography_container {
     width: 80%;
   }
@@ -414,7 +407,7 @@ figcaption {
     width: 70%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .discography_container .card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -446,7 +439,7 @@ figcaption {
   flex-wrap: nowrap;
   width: 90%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .detail_container {
     width: 80%;
   }
@@ -460,45 +453,84 @@ figcaption {
   margin-bottom: 2rem;
   justify-self: center;
 }
-
-.detail_image_container {
-  display: flex;
-  justify-content: center;
-}
-
-.detail_image_container figure {
-  margin-left: 0;
-  margin-bottom: 2rem;
-  width: 75%;
-}
-
-.detail_image_container figure img {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px)  {
-  .detail_image_container figure {
-    float: right;
-    margin-left: 2rem;
-    max-width: 40%;
-  }
-  .detail_image_container {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 1280px)  {
-  .detail_image_container figure {
-    max-width: 33%;
-  }
-}
-
 .detail_container article ul {
   margin-bottom: 2rem;
   column-count: 2;
 }
 .detail_container article li {
   margin-bottom: 1rem;
+}
+
+.detail_image_container {
+  display: flex;
+  justify-content: center;
+}
+.detail_image_container figure {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  width: 75%;
+}
+.detail_image_container figure img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .detail_image_container figure {
+    float: right;
+    margin-left: 2rem;
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detail_image_container figure {
+    float: right;
+    margin-left: 2rem;
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .detail_image_container {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detail_image_container {
+    display: inline;
+  }
+}
+
+.figure_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.figure_container figure {
+  max-width: 75%;
+}
+.figure_container figure img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .figure_container figure {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .figure_container figure {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .figure_container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .figure_container {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
 .members-carousel {
@@ -536,7 +568,7 @@ figcaption {
   flex-wrap: nowrap;
   width: 90%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .references_container {
     width: 80%;
   }

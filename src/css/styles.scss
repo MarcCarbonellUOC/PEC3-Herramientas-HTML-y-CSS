@@ -18,7 +18,7 @@ $mercury-red: #9c2227;
 }
 
 @mixin tablet {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
     @content;
   }
 }
@@ -401,26 +401,10 @@ figcaption {
   @include desktop() {
     width: 70%;
   }
-
   article {
     h1 {
       margin-bottom: 2rem;
       justify-self: center;
-    }
-    figure {
-      margin-left: 0;
-      margin-bottom: 2rem;
-      img {
-        width: 100%;
-      }
-      @include tablet() {
-        float: right;
-        margin-left: 2rem;
-      }
-      @include desktop() {
-        float: right;
-        margin-left: 2rem;
-      }
     }
     ul {
       margin-bottom: 2rem;
@@ -431,6 +415,64 @@ figcaption {
     }
   }
 }
+
+.detail_image_container {
+  display: flex;
+  justify-content: center;
+  figure {
+    margin-left: 0;
+    margin-bottom: 2rem;
+    width: 75%;
+    img {
+      width: 100%;
+    }
+    @include tablet() {
+      float: right;
+      margin-left: 2rem;
+      max-width: 300px;
+    }
+    @include desktop() {
+      float: right;
+      margin-left: 2rem;
+      max-width: 300px;
+    }
+  }
+  @include tablet() {
+    display: inline;
+  }
+  @include desktop() {
+    display: inline;
+  }
+}
+
+.figure_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  figure {
+    max-width: 75%;
+    img {
+      width: 100%;
+    }
+    @include tablet() {
+      max-width: 350px;
+    }
+    @include desktop() {
+      max-width: 350px;
+    }
+  }
+  @include tablet() {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  @include desktop() {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+
 
 .members-carousel {
   position: relative;
