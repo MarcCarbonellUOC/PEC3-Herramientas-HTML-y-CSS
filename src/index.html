@@ -12,39 +12,49 @@
   <body>
     <main class="cover_main">
       <div class="cover_container">
-        <div class="logo">
+        <div class="logo_n_clip">
+          <picture class="clip_thunder">
+            <source 
+              srcset="img/thunder-cover.jpg?as=avif&width=125 125w,
+                      img/thunder-cover.jpg?as=avif&width=175 175w"
+              sizes="(max-width: 767px) 125px, 175px"
+              type="image/avif" />
+            <source 
+              srcset="img/thunder-cover.jpg?as=webp&width=125 125w,
+                      img/thunder-cover.jpg?as=webp&width=175 175w"
+              sizes="(max-width: 767px) 125px, 175px"
+              type="image/webp" />
+            <source 
+              srcset="img/thunder-cover.jpg?width=125 125w,
+                      img/thunder-cover.jpg?width=175 175w"
+              sizes="(max-width: 767px) 125px, 175px" />
+            <img src="img/thunder-cover.jpg" alt="Portada del single 'Thunder'">
+          </picture>
           <a href="index.html" title="Página de incio">
-            <picture>
-              <source media="(max-width: 1279px)"
-                      srcset="img/imagine-dragons-logo-short.png?as=avif&width=430 1x,
-                             img/imagine-dragons-logo-short.png?as=avif&width=645 1.5x,
-                             img/imagine-dragons-logo-short.png?as=avif 2x"
-                      type="image/avif"/>
-              <source media="(max-width: 1279px)"
-                      srcset="img/imagine-dragons-logo-short.png?as=webp&width=430 1x,
-                             img/imagine-dragons-logo-short.png?as=webp&width=645 1.5x,
-                             img/imagine-dragons-logo-short.png?as=webp 2x"
-                      type="image/webp"/>
-              <source media="(max-width: 1279px)"
-                      srcset="img/imagine-dragons-logo-short.png?width=430 1x,
-                             img/imagine-dragons-logo-short.png?width=860 1.5x,
-                             img/imagine-dragons-logo-short.png 2x"/>
-
-              <source media="(min-width: 1280px)"
-                      srcset="img/imagine-dragons-logo.png?as=avif&width=800 1x,
-                             img/imagine-dragons-logo.png?as=avif&width=1200 1.5x,
-                             img/imagine-dragons-logo.png?as=avif 2x"
-                      type="image/avif"/>
-              <source media="(min-width: 1280px)"
-                      srcset="img/imagine-dragons-logo.png?as=webp&width=800 1x,
-                             img/imagine-dragons-logo.png?as=webp&width=1200 1.5x,
-                             img/imagine-dragons-logo.png?as=webp 2x"
-                      type="image/webp"/>
-              <source media="(min-width: 1280px)"
-                      srcset="img/imagine-dragons-logo.png?width=800 1x,
-                             img/imagine-dragons-logo.png?width=1200 1.5x,
-                             img/imagine-dragons-logo.png 2x"/>
-             
+            <picture  class="logo">
+              <source 
+                srcset="img/imagine-dragons-logo-short.png?as=avif&width=350 350w,
+                        img/imagine-dragons-logo-short.png?as=avif&width=400 400w,
+                        img/imagine-dragons-logo-short.png?as=avif&width=420 420w"
+                sizes="(max-width: 767px) 350px,
+                      (max-width: 1279px) 400px,
+                      420px"
+                type="image/avif" />
+              <source 
+                srcset="img/imagine-dragons-logo-short.png?as=webp&width=350 350w,
+                        img/imagine-dragons-logo-short.png?as=webp&width=400 400w,
+                        img/imagine-dragons-logo-short.png?as=webp&width=420 420w"
+                sizes="(max-width: 767px) 350px,
+                      (max-width: 1279px) 400px,
+                      420px"
+                type="image/webp" />
+              <source 
+                srcset="img/imagine-dragons-logo-short.png?width=350 350w,
+                        img/imagine-dragons-logo-short.png?width=400 400w,
+                        img/imagine-dragons-logo-short.png?width=420 420w"
+                sizes="(max-width: 767px) 350px,
+                      (max-width: 1279px) 400px,
+                      420px" />
               <img src="img/imagine-dragons-logo-short.png" alt="Logo de Imagine Dragons" />
             </picture>
           </a>

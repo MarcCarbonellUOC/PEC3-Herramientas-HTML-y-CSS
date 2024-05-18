@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -235,17 +237,73 @@ figcaption {
   font-size: 1.5rem;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .promo_text {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .promo_text {
+    margin-top: 1rem;
+  }
+}
 
-.logo {
+.logo_n_clip {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
-.logo img {
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .logo_n_clip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo_n_clip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.logo_n_clip .logo img {
+  width: 350px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .logo_n_clip .logo img {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo_n_clip .logo img {
+    width: 430px;
+  }
+}
+
+.clip_thunder {
+  max-width: 125px;
+  clip-path: polygon(31% 93%, 88% 33%, 58% 33%, 88% 0%, 40% 0%, 15% 50%, 45% 50%);
+}
+.clip_thunder img {
   width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .clip_thunder {
+    max-width: 175px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .clip_thunder {
+    max-width: 175px;
+  }
 }
 
 .home_container {
@@ -264,6 +322,32 @@ figcaption {
 @media screen and (min-width: 1280px) {
   .home_container {
     width: 70%;
+  }
+}
+.home_container article .title_n_svg {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 120px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .home_container article .title_n_svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .home_container article .title_n_svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 }
 .home_container article p:first-of-type {
@@ -288,6 +372,101 @@ figcaption {
   }
 }
 
+#speaker {
+  fill: white;
+  flex: 1;
+  margin: 0 1rem;
+  min-width: 120px;
+  max-width: 120px;
+  height: 100%;
+}
+
+#speaker .little_circle {
+  transform-origin: 22.899px 12.692px;
+  animation: bounceIn 0.6s ease-in-out 2s infinite;
+}
+
+#speaker .big_circle {
+  transform-origin: 22.899px 31.906px;
+  animation: bounceIn 0.6s ease-in-out 2s infinite;
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+#speaker .note_top_left {
+  transform: translate(20px, 5px) scale(0.01);
+  animation: floatLeft 1.5s linear 2s infinite;
+}
+
+#speaker .note_top_right {
+  transform: translate(20px, 5px) scale(0.01);
+  animation: floatRight 1.75s linear 2s infinite;
+}
+
+#speaker .note_bottom_left {
+  transform: translate(20px, 30px) scale(0.01);
+  animation: floatLeft 2s linear 2s infinite;
+}
+
+#speaker .note_bottom_right {
+  transform: translate(20px, 30px) scale(0.01);
+  animation: floatRight 2.25s linear 2s infinite;
+}
+
+@keyframes floatLeft {
+  0% {
+    opacity: 1;
+    fill: red;
+  }
+  20% {
+    fill: orange;
+  }
+  40% {
+    fill: yellow;
+  }
+  60% {
+    fill: green;
+    opacity: 1;
+  }
+  80% {
+    fill: blue;
+  }
+  100% {
+    transform: translate(-20px, -20px) scale(0.05);
+    opacity: 0;
+    fill: purple;
+  }
+}
+@keyframes floatRight {
+  0% {
+    opacity: 1;
+    fill: red;
+  }
+  20% {
+    fill: orange;
+  }
+  40% {
+    fill: yellow;
+  }
+  60% {
+    fill: green;
+    opacity: 1;
+  }
+  80% {
+    fill: blue;
+  }
+  100% {
+    transform: translate(35px, -20px) scale(0.05);
+    opacity: 0;
+    fill: purple;
+  }
+}
 .members_container {
   display: flex;
   flex-direction: column;
