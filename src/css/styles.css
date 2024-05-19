@@ -83,6 +83,11 @@ figcaption {
   max-width: 100%;
 }
 
+#logo {
+  fill: white;
+  width: 70px;
+}
+
 .nav_menu {
   display: none;
 }
@@ -372,6 +377,34 @@ figcaption {
   }
 }
 
+#title {
+  max-width: min-content;
+  width: 100%;
+}
+#title text {
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#title text tspan {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 10s forwards, fill 2s 2s forwards;
+  fill-opacity: 0;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  to {
+    fill-opacity: 1;
+  }
+}
 #speaker {
   fill: white;
   flex: 1;
@@ -401,21 +434,25 @@ figcaption {
 }
 #speaker .note_top_left {
   transform: translate(20px, 5px) scale(0.01);
+  opacity: 0;
   animation: floatLeft 1.5s linear 2s infinite;
 }
 
 #speaker .note_top_right {
   transform: translate(20px, 5px) scale(0.01);
+  opacity: 0;
   animation: floatRight 1.75s linear 2s infinite;
 }
 
 #speaker .note_bottom_left {
   transform: translate(20px, 30px) scale(0.01);
+  opacity: 0;
   animation: floatLeft 2s linear 2s infinite;
 }
 
 #speaker .note_bottom_right {
   transform: translate(20px, 30px) scale(0.01);
+  opacity: 0;
   animation: floatRight 2.25s linear 2s infinite;
 }
 
@@ -493,7 +530,6 @@ figcaption {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .card_container {

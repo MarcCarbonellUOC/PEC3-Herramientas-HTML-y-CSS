@@ -106,6 +106,11 @@ figcaption {
   }
 }
 
+#logo {
+  fill: white;
+  width: 70px;
+}
+
 .nav_menu {
   display: none;
   @include desktop {
@@ -321,6 +326,36 @@ figcaption {
   }
 }
 
+#title {
+  max-width: min-content;
+  width: 100%;
+  text {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    tspan {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: draw 10s forwards, fill 2s 2s forwards;
+      fill-opacity: 0;
+    }
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill-opacity: 1;
+  }
+}
+
 #speaker {
   fill: white;
   flex: 1;
@@ -351,21 +386,25 @@ figcaption {
 
 #speaker .note_top_left {
   transform: translate(20px, 5px) scale(0.01);
+  opacity: 0;
   animation: floatLeft 1.5s linear 2s infinite;
 }
 
 #speaker .note_top_right {
   transform: translate(20px, 5px) scale(0.01);
+  opacity: 0;
   animation: floatRight 1.75s linear 2s infinite;
 }
 
 #speaker .note_bottom_left {
   transform: translate(20px, 30px) scale(0.01);
+  opacity: 0;
   animation: floatLeft 2s linear 2s infinite;
 }
 
 #speaker .note_bottom_right {
   transform: translate(20px, 30px) scale(0.01);
+  opacity: 0;
   animation: floatRight 2.25s linear 2s infinite;
 }
 
@@ -435,7 +474,6 @@ figcaption {
 
 .card_container {
   @include flex;
-  margin-top: 4rem;
   @include tablet() {
     @include grid($templateColumns: 2, $columnGap: 4rem);
   }
