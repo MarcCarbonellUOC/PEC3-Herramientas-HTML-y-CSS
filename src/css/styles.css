@@ -85,7 +85,7 @@ figcaption {
 
 #logo {
   fill: white;
-  width: 70px;
+  width: 4.3rem;
 }
 
 .nav_menu {
@@ -101,10 +101,10 @@ figcaption {
   margin: 0 1rem;
 }
 .hamburguer_btn div {
-  width: 35px;
-  height: 2px;
+  width: 2.2rem;
+  height: 0.125rem;
   background-color: white;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 @media screen and (min-width: 1280px) {
   .hamburguer_btn {
@@ -129,8 +129,8 @@ figcaption {
   height: 1rem;
 }
 .close_btn div {
-  width: 35px;
-  height: 2px;
+  width: 2.2rem;
+  height: 0.125rem;
   background-color: white;
   position: absolute;
 }
@@ -204,6 +204,53 @@ figcaption {
 .nav_list li a:hover, .nav_list li .current {
   color: #2C74B3;
   border-bottom-color: #2C74B3;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10rem;
+  gap: 10%;
+  padding: 1rem;
+}
+footer .logo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 9rem;
+}
+footer #logo {
+  width: 6rem;
+}
+
+.divider {
+  width: 0;
+  border: 1px solid white;
+  height: 100%;
+}
+
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 9rem;
+  list-style: none;
+  padding-left: 0;
+  gap: 0.5rem;
+}
+.sitemap a {
+  text-decoration: none;
+  color: white;
+}
+.sitemap a:hover {
+  color: #2C74B3;
 }
 
 .cover_main {
@@ -280,21 +327,21 @@ figcaption {
   }
 }
 .logo_n_clip .logo img {
-  width: 350px;
+  width: 21.9rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .logo_n_clip .logo img {
-    width: 400px;
+    width: 25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .logo_n_clip .logo img {
-    width: 430px;
+    width: 26.9rem;
   }
 }
 
 .clip_thunder {
-  max-width: 125px;
+  max-width: 7.8rem;
   clip-path: polygon(31% 93%, 88% 33%, 58% 33%, 88% 0%, 40% 0%, 15% 50%, 45% 50%);
 }
 .clip_thunder img {
@@ -302,12 +349,12 @@ figcaption {
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .clip_thunder {
-    max-width: 175px;
+    max-width: 10.9rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .clip_thunder {
-    max-width: 175px;
+    max-width: 10.9rem;
   }
 }
 
@@ -335,7 +382,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  min-height: 120px;
+  min-height: 7.5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .home_container article .title_n_svg {
@@ -409,8 +456,8 @@ figcaption {
   fill: white;
   flex: 1;
   margin: 0 1rem;
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 7.5rem;
+  max-width: 7.5rem;
   height: 100%;
 }
 
@@ -692,14 +739,14 @@ figcaption {
   .detail_image_container figure {
     float: right;
     margin-left: 2rem;
-    max-width: 300px;
+    max-width: 18.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .detail_image_container figure {
     float: right;
     margin-left: 2rem;
-    max-width: 300px;
+    max-width: 18.75rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
@@ -727,12 +774,12 @@ figcaption {
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .figure_container figure {
-    max-width: 350px;
+    max-width: 21.9rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .figure_container figure {
-    max-width: 350px;
+    max-width: 21.9rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
