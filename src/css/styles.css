@@ -224,8 +224,9 @@ footer .logo_container {
   flex-wrap: nowrap;
   width: 9rem;
 }
-footer #logo {
+footer svg {
   width: 6rem;
+  fill: white;
 }
 
 .divider {

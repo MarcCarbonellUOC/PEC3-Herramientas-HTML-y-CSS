@@ -223,8 +223,9 @@ footer {
     @include flex;
     width: 9rem;
   }
-  #logo {
+  svg {
     width: 6rem;
+    fill: white;
   }
 }
 
