@@ -75,17 +75,25 @@ figcaption {
   padding: 0 1rem;
 }
 .navbar .logo_container {
-  max-width: 17rem;
   margin: 0 1rem;
 }
-.navbar img {
-  display: block;
-  max-width: 100%;
+.navbar .logo_container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  gap: 1rem;
+}
+.navbar .logo_container a h1 {
+  color: white;
+  font-size: 1.5rem;
 }
 
 #logo svg {
   fill: white;
-  width: 4.3rem;
+  width: 3.4rem;
 }
 
 .nav_menu {

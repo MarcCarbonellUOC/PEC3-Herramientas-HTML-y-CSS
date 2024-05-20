@@ -97,19 +97,24 @@ figcaption {
   height: 5.7rem;
   padding: 0 1rem;
   .logo_container {
-    max-width: 17rem;
+    // max-width: 17rem;
     margin: 0 1rem;
-  }
-  img {
-    display: block;
-    max-width: 100%;
+    a {
+      @include flex($flexDirection: row);
+      text-decoration: none;
+      gap: 1rem;
+      h1 {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
 #logo {
   svg {
     fill: white;
-    width: 4.3rem;
+    width: 3.4rem;
   }
 }
 
