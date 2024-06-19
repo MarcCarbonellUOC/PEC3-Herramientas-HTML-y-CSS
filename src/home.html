@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap">
     </noscript>
     <script type="module" src="js/side-menu.js"></script>
+    <link rel="stylesheet" href="../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
     <title>Inicio</title>
   </head>
   <body>
@@ -149,12 +151,16 @@
             géneros.
           </p>
           <div class="iframe_container">
-            <iframe width="522" height="315" src="https://www.youtube.com/embed/ktvTqknDobU?si=4gkTBuZHxSsSOjdr"
-            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-            <iframe width="522" height="315" src="https://www.youtube.com/embed/7wtfhZwyrcc?si=_4mDoPzgQheeWyD1" title="YouTube
-            video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <lite-youtube videoid="4gkTBuZHxSsSOjdr" style="background-image: url('http://i3.ytimg.com/vi/ktvTqknDobU/hqdefault.jpg');">
+              <a href="https://www.youtube.com/watch?v=ktvTqknDobU" class="lty-playbtn" title="Play Video" target="_blank">
+                <span class="lyt-visually-hidden">Play Video: Keynote (Google I/O '18)</span>
+              </a>
+            </lite-youtube>
+            <lite-youtube videoid="4gkTBuZHxSsSOjdr" style="background-image: url('http://i3.ytimg.com/vi/7wtfhZwyrcc/hqdefault.jpg');">
+              <a href="https://www.youtube.com/watch?v=7wtfhZwyrcc" class="lty-playbtn" title="Play Video" target="_blank">
+                <span class="lyt-visually-hidden">Play Video: Keynote (Google I/O '18)</span>
+              </a>
+            </lite-youtube>
           </div>
         </article>
       </div>
