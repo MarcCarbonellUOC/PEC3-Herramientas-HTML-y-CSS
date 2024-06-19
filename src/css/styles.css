@@ -337,6 +337,7 @@ footer svg {
 }
 .logo_n_clip .logo img {
   width: 21.9rem;
+  height: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .logo_n_clip .logo img {
@@ -355,6 +356,7 @@ footer svg {
 }
 .clip_thunder img {
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .clip_thunder {

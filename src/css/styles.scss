@@ -97,7 +97,6 @@ figcaption {
   height: 5.7rem;
   padding: 0 1rem;
   .logo_container {
-    // max-width: 17rem;
     margin: 0 1rem;
     a {
       @include flex($flexDirection: row);
@@ -301,6 +300,7 @@ footer {
   width: 100%;
   .logo img {
     width: 21.9rem;
+    height: auto;
     @include tablet() {
       width: 25rem;
     }
@@ -315,6 +315,7 @@ footer {
   clip-path: polygon(31% 93%, 88% 33%, 58% 33%, 88% 0%, 40% 0%, 15% 50%, 45% 50%);
   img {
     width: 100%;
+    height: auto;
   }
   @include tablet() {
     max-width: 10.9rem;
