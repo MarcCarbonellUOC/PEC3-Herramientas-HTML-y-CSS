@@ -419,6 +419,7 @@ footer svg {
 }
 .home_container article img {
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 1280px) {
   .home_container article .iframe_container {
